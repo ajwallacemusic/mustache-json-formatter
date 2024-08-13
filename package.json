@@ -1,0 +1,57 @@
+{
+  "name": "mustache-json",
+  "displayName": "Mustache Json Syntax Highligting and Formatter",
+  "description": "A syntax highlighter and formatter for json using mustache templates, specifically tailored for Elasticsearch and Opensearch search templates.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "mustache_json",
+        "aliases": [
+          "Mustache JSON"
+        ],
+        "extensions": [
+          ".mustache_json",
+          ".mustachejson",
+          ".mustache",
+          ".tmpl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mustache_json",
+        "scopeName": "source.mustache-json",
+        "path": "./syntaxes/mustache-json.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  }
+}
