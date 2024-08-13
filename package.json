@@ -6,8 +6,28 @@
   "engines": {
     "vscode": "^1.92.0"
   },
+  "publisher": "ajwallacemusic",
+  "license": "MIT",
+  "readme": "README.md",
+  "icon": "images/mustache_json_image.png",
+  "author": {
+    "name": "AJ Wallace"
+  },
+  "homepage": "https://github.com/ajwallacemusic/mustache-json-formatter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajwallacemusic/mustache-json-formatter"
+  },
+  "bugs": {
+    "url": "https://github.com/attilabuti/mustache-syntax-vscode/issues"
+  },
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "light"
+  },
   "categories": [
-    "Formatters"
+    "Formatters",
+    "Programming Languages"
   ],
   "main": "./out/extension.js",
   "contributes": {
