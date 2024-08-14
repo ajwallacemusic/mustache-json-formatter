@@ -38,6 +38,7 @@
           "Mustache JSON"
         ],
         "extensions": [
+          ".esjson",
           ".mustache_json",
           ".mustachejson",
           ".mustache",
