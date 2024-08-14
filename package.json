@@ -1,10 +1,10 @@
 {
   "name": "mustache-json",
-  "displayName": "Mustache Json Syntax Highligting and Formatter",
+  "displayName": "Mustache Json Syntax Highlighting and Formatter",
   "description": "A syntax highlighter and formatter for json using mustache templates, specifically tailored for Elasticsearch and Opensearch search templates.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.92.0"
+    "vscode": "^1.0.0"
   },
   "publisher": "ajwallacemusic",
   "license": "MIT",
